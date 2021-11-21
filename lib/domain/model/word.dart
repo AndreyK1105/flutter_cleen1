@@ -41,19 +41,7 @@ class Word {
     return map;
   }
 
-  static Word fromMap(Map<String, dynamic>map){
 
-    return Word(
-        id: (map["id"]!=null)?map['id']:0,
-        english:map["english"],
-        russia: map["russia"],
-        transcr: map["transcr"],
-        dataAdd: map["dataAdd"],
-        rating: map["rating"],
-        lesson: map["lesson"],
-        complete: map["complete"]==1
-    );
-  }
   set english1(String value) {
     english = value;
   }
